@@ -1,0 +1,22 @@
+{
+  "name": "@your-org/w6w-app-example",
+  "exports": "./index.ts",
+  "imports": {
+    "@w6w/types": "jsr:@w6w/types@^0",
+    "@std/assert": "jsr:@std/assert@^1.0.0"
+  },
+  "tasks": {
+    "test": "deno test -A tests/",
+    "check": "deno check index.ts actions/ auth/ lib/ tests/",
+    "fmt": "deno fmt index.ts actions/ auth/ lib/ tests/",
+    "lint": "deno lint index.ts actions/ auth/ lib/ tests/"
+  },
+  "fmt": {
+    "lineWidth": 100,
+    "semiColons": true,
+    "singleQuote": false
+  },
+  "lint": {
+    "rules": { "tags": ["recommended"] }
+  }
+}

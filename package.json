@@ -1,0 +1,16 @@
+{
+  "name": "@your-org/w6w-app-example",
+  "version": "0.1.0",
+  "description": "Example w6w app — swap the identity, auth, and actions to build your own integration.",
+  "license": "MIT",
+  "author": { "name": "your-org" },
+  "private": true,
+  "w6w": {
+    "id": "com.example.hello",
+    "displayName": "Example",
+    "categories": ["utility"],
+    "appearance": { "icon": { "url": "./assets/icon.svg", "alt": "Example" } },
+    "network": { "allow": ["httpbin.org"] },
+    "entry": "./index.ts"
+  }
+}
