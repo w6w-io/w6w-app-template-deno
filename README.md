@@ -1,6 +1,10 @@
-# w6w-app-template
+# w6w-app-template-deno
 
-A minimal, opinionated starting point for building a [w6w](https://w6w.io) app: a package that exposes actions (and optionally auth) against a third-party API so w6w workflows can invoke it.
+A minimal starting point for building a [w6w](https://w6w.io) app with **Deno** as the local dev toolchain.
+
+Prefer Node? See [`w6w-app-template-node`](https://github.com/w6w-io/w6w-app-template-node) — same code contract, npm/tsx/vitest instead.
+
+> The w6w runtime only requires `package.json` (identity + `w6w` block) and an ES-module entry point. `deno.json` here is a dev convenience: it pins `@w6w/types` from JSR and wires up `deno task test/check/fmt/lint`.
 
 Use it as a **GitHub template** — click "Use this template" and start editing.
 
@@ -27,7 +31,7 @@ The example points at `httpbin.org` so the actions and tests run against a stabl
 
 ## Getting started
 
-1. Click **Use this template** (or `gh repo create --template w6w-io/w6w-app-template`).
+1. Click **Use this template** (or `gh repo create --template w6w-io/w6w-app-template-deno`).
 2. Update `package.json`:
    - `name` — your npm-style package name
    - `w6w.id` — reverse-DNS globally unique id (`com.acme.foo`)
